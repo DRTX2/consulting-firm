@@ -1,0 +1,112 @@
+/* ********** Custom Properties ********** */
+:root {
+  --first-color: rgb(217, 0, 98);
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-color: rgb(20, 25, 45);
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: rgb(80, 20, 100);
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+  --link-color: rgb(80, 158, 227);
+  --link-alpha-color: rgba(80, 158, 227, 0.75);
+
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+}
+
+/* ********** Reset Styles ********** */
+a{
+  color: var(--link-color);
+  transition: all 0.3s ease-out;
+}
+a:hover{
+  /* color: var(--); */
+}
+
+body{
+  font-family: "Raleway", serif;
+}
+
+.bg-dark{
+  background-color: var(--second-color) !important;
+  /* adaptarnos a la herramienta */
+}
+
+.dropdown-item{
+  color: var(--first-alpha-color);
+  font-weight: bold;
+  transition: all .3s ease-out;
+
+}
+.dropdown-item:hover{
+  color: var(--third-alpha-color);
+  font-weight: bold;
+}
+
+.navbar-brand img{
+  height: 30px;
+  width: auto;
+  /* 30px s lo q dice bootstrap */
+}
+/* para cambiar el color del icono de la hamburguesa vamos a modificar la variable de esa clase y ya pues, le cambiamos el rgba a lo q tenemos  */
+
+.navbar-dark{
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");  
+}
+
+.navbar-dark .navbar-toggler:hover{
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); 
+  transition: all .3s ease-out;
+  opacity: 0.75;
+}
+
+.nav-item{
+  transition: all .3s ease-out;
+}
+
+.nav-item:hover{
+  background-color: var(--first-alpha-color);
+}
+
+.nav-link{
+  margin-left: .5rem;
+  color: var(--first-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.nav-link:hover{
+  color: var(--bs-white);
+}
+
+/* ********** Bootstrap Styles ********** */
+
+
+/* ********** My Styles ********** */
+.navbar-toggler span{
+  color: var(--first-color);
+}
+
+@media (min-width: 576px) {
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .nav-item:hover{
+    background-color: transparent;
+
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
