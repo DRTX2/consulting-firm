@@ -109,6 +109,10 @@ body {
   );
 }
 
+.bg-second-alpha-color{
+  background-color: var(--second-alpha-color);
+}
+
 .bg-third-color {
   background-color: var(--third-color);
 }
