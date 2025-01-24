@@ -35,7 +35,7 @@
         <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-auto">
           <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-auto">   con el me-auto se hace un margin end auto asi q s centra xd-->
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            <a class="nav-link" href="index.html">Inicio</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -59,7 +59,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="clientes.html">Clientes</a>
+            <a class="nav-link active" href="clientes.html"  aria-current="page" >Clientes</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="comencemos.html">Comencemos</a>
@@ -75,11 +75,12 @@
     <div class="container">
       <!-- g-0: No gutters/espaciados entre filas -->
       <section class="row g-0">
+        <!-- cabecera -->
         <article class="col-12 text-center">
           <h2>Clientes & Colaboraciones</h2>
           <p class="fs-5">Aquí hay una selección de clientes felices y hermosos proyectos.</p>
         </article>
-
+        <!-- c1 -->
         <article class="col-12">
           <!-- le añado border-0 para quitar borde y lo mismo con rounded para el redondeo -->
           <div class="card text-bg-dark border-0 rounded-0 ">
@@ -90,17 +91,37 @@
               <p class="card-text">
                 <small>CEO/Co-fundador, Commerce AI</small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-1">Ver Proyecto</a>
               </p>
-              <p class="card-text">
-              <blockquote class="d-none d-md-block">
+
+              <blockquote class="d-none d-md-block card-text">
                 No estábamos satisfechos con ninguna de nuestras opciones anteriores. Pero Bad Dog tuvo lo que teníamos
                 en mente.
               </blockquote>
-              </p>
+
             </div>
           </div>
+
+          <div class="modal fade" id="cliente-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel">Commerce AI</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Posicioné una nueva marca comercial (en línea) y diseñé un sitio web adaptado y hecho a medida.</p>
+                  <img src="img/work-layout-1.jpg" alt="Commerce AI" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </article>
+        <!-- c2 -->
         <article class="col-12 col-sm-6 col-lg-4">
           <div class="card text-bg-dark border-0 rounded-0 ">
             <img src="img/clients-2.jpg" class="card-img" alt="Andy Pandharikar">
@@ -111,7 +132,7 @@
                 <small>Dueño de Zeb Couch
                 </small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-2">Ver Proyecto</a>
               </p>
               <p class="card-text">
               <blockquote class="d-none d-md-block">
@@ -121,7 +142,34 @@
               </p>
             </div>
           </div>
+
+          <div class="modal fade" id="cliente-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel"> <a href="https://www.newenglandwalkers.com/"
+                      target="_blank">Walkers</a> </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    He estado trabajando con Zeb en varios otros proyectos en el último año. Cuando se contactó conmigo
+                    para hablar sobre un proyecto que se desarrollaba en torno al diseño de una tienda web personalizada
+                    para su padre, inmediatamente me interesé e inspiré. Esto resultó ser un proyecto realmente
+                    inspirador y divertido en el que trabajar en conjunto, lo que dio como resultado un sitio web de
+                    diseño personalizado y muy creativo con una tienda en línea.
+                  </p>
+                  <img src="img/work-layout-2.jpg" alt="Walkers" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </article>
+        <!-- c3 -->
         <article class="col-12 col-sm-6 col-lg-4">
           <div class="card text-bg-dark border-0 rounded-0 ">
             <img src="img/clients-3.jpg" class="card-img" alt="Andy Pandharikar">
@@ -130,7 +178,7 @@
               <p class="card-text">
                 <small>Co-dueña & Diseñadora de Hey Textile</small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-3">Ver Proyecto</a>
               </p>
               <p class="card-text">
               <blockquote class="d-none d-md-block">
@@ -140,7 +188,34 @@
               </p>
             </div>
           </div>
+
+          <div class="modal fade" id="cliente-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel"> <a href="https://www.heytextile.com/">Hey Textile
+                    </a> </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Lori es dueña de su negocio junto con su esposo. Resultan ser una de esas empresas con las que me
+                    encanta trabajar. Me dan mucha libertad en mi proceso de diseño creativo, pero aún tienen muchas de
+                    sus propias ideas que quieren combinar. Este proyecto resultó ser un proyecto super divertido para
+                    trabajar juntos. ¡Ambos estamos imaginando una buena relación de negocios para trabajar nuevamente
+                    en proyectos futuros!
+
+                  </p>
+                  <img src="img/work-layout-3.jpg" alt="Hey Textile" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </article>
+        <!-- c4 -->
         <article class="col-12 col-sm-6 col-lg-4">
           <div class="card text-bg-dark border-0 rounded-0 ">
             <img src="img/clients-4.jpg" class="card-img" alt="Andy Pandharikar">
@@ -151,7 +226,7 @@
                 <small>Co-fundador & Director, Basis Networks
                 </small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-4">Ver Proyecto</a>
               </p>
               <p class="card-text">
               <blockquote class="d-none d-md-block">
@@ -161,7 +236,36 @@
               </p>
             </div>
           </div>
+
+
+          <div class="modal fade" id="cliente-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel">
+                    <a href="https://www.basisnetworks.com.au/">Basis Networks</a>
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Tom me contactó con la idea de hacer un rediseño completo de su sitio web (obsoleto) y también hacer
+                    que responda. Estaba buscando un sitio web de aplicación de estilo moderno y me dio mucha libertad
+                    para crear un diseño que tenía en mente. El resultado es un sitio web de aspecto moderno del que
+                    ambos estamos orgullosos.
+
+                  </p>
+                  <img src="img/work-layout-4.jpg" alt="Hey Textile" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </article>
+        <!-- c5 -->
         <article class="col-12 col-sm-6 col-lg-4">
           <div class="card text-bg-dark border-0 rounded-0 ">
             <img src="img/clients-5.jpg" class="card-img" alt="Andy Pandharikar">
@@ -171,7 +275,7 @@
                 <small>Co-founder & CEO Swingvy
                 </small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-5">Ver Proyecto</a>
               </p>
               <p class="card-text">
               <blockquote class="d-none d-md-block">
@@ -181,6 +285,31 @@
               </p>
             </div>
           </div>
+
+          <div class="modal fade" id="cliente-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel">
+                    <a href="#">Swingvy</a>
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    He estado trabajando con el equipo de Shale Capital Group desde 2014. Hemos trabajado juntos en
+                    varios proyectos de sitios web de (re) diseño y (re) marca. Estoy muy contento de que nuestra
+                    relación continua demuestre que puedo ofrecer la calidad que requieren en sus proyectos.
+                  </p>
+                  <img src="img/work-layout-5.jpg" alt="Hey Textile" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </article>
         <article class="col-12 col-sm-6 col-lg-4">
           <div class="card text-bg-dark border-0 rounded-0 ">
@@ -192,7 +321,7 @@
                 <small>CEO Lash Spa Studio
                 </small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-6">Ver Proyecto</a>
               </p>
               <p class="card-text">
               <blockquote class="d-none d-md-block">
@@ -202,6 +331,33 @@
               </p>
             </div>
           </div>
+
+
+          <div class="modal fade" id="cliente-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel">
+                    <a href="#">Lash Spa Studio</a>
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    He estado trabajando con el equipo de Lash Spa Studio desde 2014. Hemos trabajado juntos en varios
+                    proyectos de sitios web de (re) diseño y (re) marca. Estoy muy contento de que nuestra relación
+                    continua demuestre que puedo ofrecer la calidad que requieren en sus proyectos.
+                  </p>
+                  <img src="img/work-layout-6.jpg" alt="Hey Textile" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
 
         </article>
         <article class="col-12 col-sm-6 col-lg-4">
@@ -214,7 +370,7 @@
                 <small>Co-fundador Bambuu BV
                 </small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-7">Ver Proyecto</a>
               </p>
               <p class="card-text">
               <blockquote class="d-none d-md-block">
@@ -224,6 +380,36 @@
               </p>
             </div>
           </div>
+
+          <div class="modal fade" id="cliente-7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel">
+                    <a href="#">Bambuu
+                    </a>
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    He estado trabajando con Bambuu BV como diseñador gráfico y diseñador web de forma regular desde
+                    2014. Bambuu ha demostrado ser un negocio de inicio muy exitoso en los Países Bajos y estoy muy
+                    contento de poder ofrecer la calidad de trabajo que ofrecen. Requieren en sus proyectos.
+
+
+                  </p>
+                  <img src="img/work-layout-7.jpg" alt="Hey Textile" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
         </article>
         <article class="col-12">
           <div class="card text-bg-dark border-0 rounded-0 ">
@@ -235,7 +421,7 @@
                 <small>Co-fundador de Webflow
                 </small>
                 <br />
-                <a href="#" class="text-success">Ver Proyecto</a>
+                <a href="#" class="text-success" data-bs-toggle="modal" data-bs-target="#cliente-8">Ver Proyecto</a>
               </p>
               <p class="card-text">
               <blockquote class="d-none d-md-block">
@@ -245,7 +431,36 @@
               </p>
             </div>
           </div>
+
+          <div class="modal fade" id="cliente-8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fs-5" id="exampleModalLabel">
+                    <a href="https://webflow.com/">Webflow</a>
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Fue justo al comienzo de mi negocio (principios de 2014), cuando el equipo de Webflow me contactó
+                    después de haber visto algunos de mis sitios web basados en Webflow. Estaban lanzando un Template
+                    Marketplace en ese entonces y me pidieron que fuera parte de él. ¡He estado creando plantillas de
+                    flujo web html5 modernas y receptivas para ellos desde entonces!
+
+                  </p>
+                  <img src="img/work-layout-8.jpg" alt="Hey Textile" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </article>
+
       </section>
     </div>
   </main>
