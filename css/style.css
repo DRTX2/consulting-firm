@@ -123,6 +123,10 @@ body {
   background-size: cover;
 }
 
+.text-first-color{
+  color: var(--first-color);
+}
+
 .text-third {
   color: var(--third-color);
 }
